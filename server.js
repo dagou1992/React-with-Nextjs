@@ -15,7 +15,7 @@ const analytics = require('./analytics');
 const argv = require('minimist')(process.argv.slice(2));
 logger.info('argv: %j', argv);
 const env = process.env.NODE_ENV || argv.e  || 'production';
-const proxyTarget = process.env.PROXY_TARGET || argv.t || 'http://121.196.200.108:9004';
+const proxyTarget = process.env.PROXY_TARGET || argv.t || '';
 const serverPort = process.env.SERVER_PORT || argv.p || 3000;
 const serverHost = process.env.SERVER_HOST || argv.h || '127.0.0.1';
 
